@@ -29,10 +29,12 @@ Product.init(
     },
     catagory_id:{
       type:DataTypes.INTEGER,
+      references:{
         model:"category",
         key:"id"
       }
-    }
+      }
+    },
   {
     sequelize,
     timestamps: false,
